@@ -88,6 +88,14 @@ You can update `bidla` through this command:
 
 $ ./composer.phar global update gesdinet/bidla
 
+Example output
+--------------
+
+This project CHANGELOG.md and CONTRIBUTORS.md
+
+*[__CHANGELOG__](CHANGELOG.md)
+*[__CONTRIBUTORS__](CONTRIBUTORS.md)
+
 How to Collaborate in this Project
 ----------------------------------
 

@@ -1,7 +1,7 @@
 {
     "name": "gesdinet/bidla",
     "type": "application",
-    "description": "PHP changelog generator from VCS",
+    "description": "Bidla is a PHP Tool for help developers to generate Changelog and Contributors files",
     "keywords": ["changelog", "contributors", "generator", "vcs", "markdown", "git"],
     "homepage": "https://github.com/gesdinet/bidla",
     "license": "MIT",
@@ -20,5 +20,5 @@
     "autoload": {
         "psr-0": { "Gesdinet\\Bidla": "src" }
     },
-    "bin": ["bidla"]
+    "bin": ["bin/bidla"]
 }

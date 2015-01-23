@@ -1,0 +1,18 @@
+{
+  "chmod": "0755",
+  "directories": [
+    "src"
+  ],
+  "files": [
+    "LICENSE.md"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "in": "vendor"
+    }
+  ],
+  "main": "bin/bidla",
+  "output": "bidla.phar",
+  "stub": true
+}

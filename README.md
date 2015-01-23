@@ -38,12 +38,14 @@ To install bidla, install Composer and issue the following command:
 
 ```sh
 $ ./composer.phar global require gesdinet/bidla
+```
 
 Then, make sure you have ``~/.composer/vendor/bin`` in your ``PATH``, and
 you're good to go:
 
 ```sh
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+```
 
 Then, just run `bidla`
 

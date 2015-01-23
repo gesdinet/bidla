@@ -1,2 +1,3 @@
 #Contributors
-* __markitosgv__ - 6 commits
+*      __Marcos__ - 3 commits
+* __markitosgv__ - 7 commits

@@ -34,12 +34,16 @@ class Git extends VersionControl
             throw new \Exception('No tags found in git repository');
         }
 
-        for($i=0; $i<$count; $i++) {
+        for($i=0; $i<=$count; $i++) {
             $process = new Process('git log --pretty="%h%x09%an%x09%s" ' . $nextTag . $this->tags[$i] . ' | grep -v "Merge branch"' . "\n\n");
             $process->run();
 
-            $this->logs[$this->tags[$i]] = $process->getOutput();
-            $nextTag = $this->tags[$i] . '..';
+            if ($i !== $count) {
+                $this->logs[$this->tags[$i]] = $process->getOutput();
+                $nextTag = $this->tags[$i] . '..';
+            } else {
+                $this->logs['Current'] = $process->getOutput();
+            }
         }
     }
 

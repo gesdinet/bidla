@@ -9,7 +9,7 @@ INSTALLATION
 
 ### Locally
 
-Download the [`bidla.phar`](http://gesdinet.github.io/bidla/downloads/bidla.phar) file and store it somewhere on your computer.
+Download the [`bidla.phar`](http://gesdinet.github.io/bidla/download/bidla.phar) file and store it somewhere on your computer.
 
 ### Globally (manual)
 
@@ -17,17 +17,17 @@ You can run these commands to easily access `bidla.phar` from anywhere on
 your system:
 
 ```sh
-$ wget http://gesdinet.github.io/bidla/downloads/bidla.phar -O bidla
+$ wget http://gesdinet.github.io/bidla/download/bidla.phar -O bidla
 ```
 or with curl:
 
 ```sh
-$ curl http://gesdinet.github.io/bidla/downloads/bidla.phar -o bidla
+$ curl http://gesdinet.github.io/bidla/download/bidla.phar -o bidla
 ```
 
 ```sh
-    $ sudo chmod a+x bidla
-    $ sudo mv bidla /usr/local/bin/bidla
+$ sudo chmod a+x bidla
+$ sudo mv bidla /usr/local/bin/bidla
 ```
 
 Then, just run `bidla`
@@ -49,21 +49,6 @@ Then, just run `bidla`
 
 Use
 ---
-
-For use you only need to run `bidla` with specific command
-
-```sh
-$ bidla git:markdown
-```
-
-If you want specific ouptu filename then:
-
-```sh
-$ php vendor/gesdinet/bidla/app.php git:markdown MyFilename
-```
-
-Options
--------
 
 In this early release Bidla only has support for Git and Markdown:
 

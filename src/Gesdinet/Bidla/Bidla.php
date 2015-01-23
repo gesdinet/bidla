@@ -13,7 +13,7 @@ namespace Gesdinet\Bidla;
 
 class Bidla
 {
-    const VERSION = "1.0.2";
+    const VERSION = "1.0.3";
     const PATH_VCS_TYPE = "Gesdinet\\Bidla\\VersionControl\\Types\\";
     const PATH_FILE_TYPE = "Gesdinet\\Bidla\\File\\Types\\";
 

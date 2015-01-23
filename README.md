@@ -65,6 +65,9 @@ Bidla accept three input arguments
 
 * bidla [vcs] [file] [filename]
 
+###Note
+>After last release commit generate CHANGELOG file, then commit this CHANGELOG change and then tag your release. In this way CHANGELOG file will be included in release.
+
 UPDATE
 ------
 
@@ -93,8 +96,8 @@ Example output
 
 This project CHANGELOG.md and CONTRIBUTORS.md
 
-*[__CHANGELOG__](CHANGELOG.md)
-*[__CONTRIBUTORS__](CONTRIBUTORS.md)
+* [__CHANGELOG__](CHANGELOG.md)
+* [__CONTRIBUTORS__](CONTRIBUTORS.md)
 
 How to Collaborate in this Project
 ----------------------------------

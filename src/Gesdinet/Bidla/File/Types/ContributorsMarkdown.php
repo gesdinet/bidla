@@ -17,9 +17,9 @@ class ContributorsMarkdown extends File
 {
     public function generator($input)
     {
-        $contributors = array_reverse($input);
+        $contributors = $input;
 
-        $this->output = "#Contributors\n";
+        $this->output = "#Contributors\n\n";
 
         foreach($contributors as $contributor) {
             $this->output .= "* ".$contributor."\n";
@@ -30,7 +30,7 @@ class ContributorsMarkdown extends File
 
     public function markDownGenerator()
     {
-        $this->output = preg_replace('/([0-9]+)\t([^\s]+)$/m', '__$2__ - $1 commits', $this->output);
+        $this->output = preg_replace('/([0-9]*)\t(.*)$/m', '__$2__ - $1 commits', $this->output);
 
     }
 }

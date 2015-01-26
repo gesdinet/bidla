@@ -1,8 +1,16 @@
 #Changelog
-#### [Current](../../releases/tag/Current)
- * [a3382a9](../../commit/a3382a9) - __(Marcos)__ Add version upgrade and changes in README
- * [8ef1520](../../commit/8ef1520) - __(Marcos)__ require-dev library php-update-phar
- * [569ccd0](../../commit/569ccd0) - __(Marcos)__ add last commits
+
+#### [v1.0.4](../../releases/tag/v1.0.4)
+ * [2324d16](../../commit/2324d16) - __(markitosgv)__ Upgrade version and readme
+ * [5182654](../../commit/5182654) - __(markitosgv)__ Double \n between title and body in changelog
+ * [a89ca54](../../commit/a89ca54) - __(markitosgv)__ Fix  [#2](../../issues/2) Collaborators middle whitespace
+ * [c38d7b6](../../commit/c38d7b6) - __(markitosgv)__ Add question for realease
+
+#### [v1.0.3](../../releases/tag/v1.0.3)
+ * [172ca6b](../../commit/172ca6b) - __(markitosgv)__ Changelog and contributors upgrade
+ * [aca9104](../../commit/aca9104) - __(markitosgv)__ Add version upgrade and changes in README
+ * [21dd185](../../commit/21dd185) - __(markitosgv)__ require-dev library php-update-phar
+ * [58d84cf](../../commit/58d84cf) - __(markitosgv)__ add last commits
  * [e228e89](../../commit/e228e89) - __(markitosgv)__ Add changelog and contributors
 
 #### [v1.0.2](../../releases/tag/v1.0.2)

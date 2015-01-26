@@ -19,7 +19,7 @@ class ChangelogMarkdown extends File
     {
         $logs = array_reverse($input);
 
-        $this->output = "#Changelog\n";
+        $this->output = "#Changelog\n\n";
 
         foreach($logs as $tag => $commits) {
             $this->output .= '#### [' . $tag . ']' . "(../../releases/tag/$tag)\n";

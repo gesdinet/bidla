@@ -16,6 +16,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\Question;
 
 class ChangelogCommand extends Command
 {
@@ -50,6 +51,19 @@ class ChangelogCommand extends Command
         $vcstype = ucfirst($input->getArgument('vcs'));
         $filetype = 'Changelog'.ucfirst($input->getArgument('file'));
 
+        $helper = $this->getHelper('question');
+        $question = new Question('Please enter new release tag name (Ex. v1.0.0): ');
+        $question->setValidator(function ($answer) {
+            if (null === $answer) {
+                throw new \RuntimeException(
+                    'No release tag name introduced'
+                );
+            }
+            return $answer;
+        });
+        $question->setMaxAttempts(3);
+        $tagname = $helper->ask($input, $output, $question);
+
         try {
             $vcs = new \ReflectionClass(Bidla::PATH_VCS_TYPE . $vcstype);
         } catch (\ReflectionException $e) {
@@ -60,6 +74,7 @@ class ChangelogCommand extends Command
         $vcs = $vcs->newInstance();
 
         try {
+            $vcs->setReleaseTag($tagname);
             $vcs->setTags();
             $vcs->setLogs();
         } catch (\Exception $e) {

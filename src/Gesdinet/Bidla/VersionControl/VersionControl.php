@@ -16,6 +16,7 @@ abstract class VersionControl
     protected $tags;
     protected $logs;
     protected $contributors;
+    protected $releaseTag;
 
     protected abstract function setTags();
 
@@ -36,5 +37,15 @@ abstract class VersionControl
     public function getContributors()
     {
         return $this->contributors;
+    }
+
+    public function setReleaseTag($tagname)
+    {
+        $this->releaseTag = $tagname;
+    }
+
+    public function getReleaseTag()
+    {
+        return $this->releaseTag;
     }
 }

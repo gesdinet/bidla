@@ -1,7 +1,7 @@
 BIDLA
 =====
 
-Bidla is a PHP Tool for help developers to generate Changelog and Contributors files. Bidla reads your VCS log and generate a changelog/contributors file to include in your repository.
+Bidla is a PHP Tool for help developers to generates Changelog and Contributors files. Bidla reads your VCS log and generates a changelog/contributors file to include in your repository.
 
 
 INSTALLATION
@@ -52,26 +52,35 @@ Then, just run `bidla`
 Use
 ---
 
-In this early release Bidla only has support for Git and Markdown:
+In this early release Bidla only supports Git and Markdown:
 
-These commands put by default git, markdown, and CHANGELOG.md or CONTRIBUTORS.md
+These commands puts by default git, markdown, and CHANGELOG.md or CONTRIBUTORS.md
 
 * bidla changelog
 * bidla contributors
 
+> Bidla changelog is going to ask you for the next tag release name. This happens cause if you tag before generate CHANGELOG then CHANGELOG file not be included in release and if you tag after Bidla can´t read last tag name.
+
+Workflow is: 
+
+1. First commit all changes for release
+2. Generate CHANGELOG and CONTRIBUTORS files with next tag name and commit them
+3. Tag your release
+4. Push your changes to remote
+
 ### Optional arguments
 
-Bidla accept three input arguments
+Bidla accepts three input arguments
 
 * bidla [vcs] [file] [filename]
 
 ###Note
->After last release commit generate CHANGELOG file, then commit this CHANGELOG change and then tag your release. In this way CHANGELOG file will be included in release.
+> Actually bidla only supports git and markdown
 
-UPDATE
+UPDATE 
 ------
 
-### Locally
+### Locally (actually doesn´t work, need to re-download .phar)
 
 The `self-update` command tries to update `bidla` itself:
 
@@ -79,7 +88,7 @@ The `self-update` command tries to update `bidla` itself:
 $ bidla.phar update
 ```
 
-### Globally (manual)
+### Globally (manual) (actually doesn´t work, need to re-download .phar)
 
 You can update `bidla` through this command:
 
